@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="CSS/product.css">
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+</head>
+<body>
+<header>
+    <a href="index.html" >
+        <img src="Images/logo.png" alt="Logo" class="logo">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="signup">Sign Up</div>
+</header>
+
+<button class="show-sidebar" onclick="toggleSidebar()">Show Sidebar</button>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+            <li><a href="#">Inventory</a></li>
+            <li><a href="#">Car Models</a></li>
+            <li><a href="#">Car Size</a></li>
+            <li><a href="#">Car Colors</a></li>
+        </ul>
+    </div>
+    <div class="products">
+        <div class="product">
+            <img src="Images/Blue Tesla.jpg" alt="Car 1">
+            <h3>Car 1</h3>
+        </div>
+        <div class="product">
+            <img src="Images/Blue Tesla.jpg" alt="Car 2">
+            <h3>Car 2</h3>
+        </div>
+        <div class="product">
+            <img src="Images/Blue Tesla.jpg" alt="Car 3">
+            <h3>Car 3</h3>
+        </div>
+        <div class="product">
+            <img src="Images/Blue Tesla.jpg" alt="Car 4">
+            <h3>Car 4</h3>
+        </div>
+        <div class="product">
+            <img src="Images/Blue Tesla.jpg" alt="Car 5">
+            <h3>Car 5</h3>
+        </div>
+        <div class="product">
+            <img src="Images/Blue Tesla.jpg" alt="Car 6">
+            <h3>Car 6</h3>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-links">
+        <a href="#">Contact</a>
+        <a href="#">News</a>
+        <a href="#">Updates</a>
+    </div>
+</footer>
+
+<script>
+    function toggleSidebar() {
+        var sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = (sidebar.style.display === 'none' || sidebar.style.display === '') ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>
