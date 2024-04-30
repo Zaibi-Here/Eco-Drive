@@ -1,0 +1,158 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo {
+  width: 100px; 
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.signup {
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.signup a {
+  text-decoration: none;
+  color: #333;
+}
+
+main {
+  padding: 20px;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+}
+
+.background-img,
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background-img {
+  background-size: cover;
+  background-position: center;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.order-btn, .demo-btn {
+  display: inline-block;
+  padding: 10px 70px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.demo-btn {
+  left: calc(50% + 250px); /* Adjust horizontal position of the Demo Drive button */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 768px) {
+  /* Adjust header layout for smaller screens */
+  header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 80px; 
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  
+  .order-btn, .demo-btn {
+    padding: 8px 40px;
+    font-size: 14px;
+  }
+
+  .demo-btn {
+    left: calc(50% + 150px);
+  }
+
+ 
+  .order-btn, .demo-btn {
+    position: relative;
+    left: auto;
+    transform: none;
+    display: block;
+    margin: 10px auto;
+  }
+}
