@@ -16,7 +16,7 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="product.html">Products</a></li>
-            <li><a href="news.html">News</a></li>
+            <li><a href="PHP/news.php">News</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -24,42 +24,76 @@
     <div class="signup">Sign Up</div>
 </header>
 
-<button class="show-sidebar" onclick="toggleSidebar()">Show Sidebar</button>
+<button class="show-sidebar" onclick="toggleSidebar()">Show/Hide Sidebar</button>
 
 <div class="container">
     <div class="sidebar">
         <h2>Sidebar</h2>
         <ul>
-            <li><a href="#">Inventory</a></li>
-            <li><a href="#">Car Models</a></li>
-            <li><a href="#">Car Size</a></li>
-            <li><a href="#">Car Colors</a></li>
+            <li>
+                <a href="#">Inventory</a>
+                <div class="dropdown-content">
+                    <a href="#">Item 1</a>
+                    <a href="#">Item 2</a>
+                    <a href="#">Item 3</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Car Models</a>
+                <div class="dropdown-content">
+                    <a href="#">Model A</a>
+                    <a href="#">Model B</a>
+                    <a href="#">Model C</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Car Size</a>
+                <div class="dropdown-content">
+                    <a href="#">Small</a>
+                    <a href="#">Medium</a>
+                    <a href="#">Large</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Car Colors</a>
+                <div class="dropdown-content">
+                    <a href="#">Red</a>
+                    <a href="#">Blue</a>
+                    <a href="#">Green</a>
+                </div>
+            </li>
         </ul>
     </div>
     <div class="products">
         <div class="product">
-            <img src="Images/Blue Tesla.jpg" alt="Car 1">
-            <h3>Car 1</h3>
+            <img src="Images/Model s.png" alt="Car 1">
+            <h3>Model S</h3>
+            <span class="price">$80,000</span>
         </div>
         <div class="product">
-            <img src="Images/Blue Tesla.jpg" alt="Car 2">
-            <h3>Car 2</h3>
+            <img src="Images/Model 3.png" alt="Car 2">
+            <h3>Model 3</h3>
+            <span class="price">$60,000</span>
         </div>
         <div class="product">
-            <img src="Images/Blue Tesla.jpg" alt="Car 3">
-            <h3>Car 3</h3>
+            <img src="Images/Model x.png" alt="Car 3">
+            <h3>Model X</h3>
+            <span class="price">$90,000</span>
         </div>
         <div class="product">
-            <img src="Images/Blue Tesla.jpg" alt="Car 4">
-            <h3>Car 4</h3>
+            <img src="Images/Model Y.png" alt="Car 4">
+            <h3>Model Y</h3>
+            <span class="price">$70,000</span>
         </div>
         <div class="product">
-            <img src="Images/Blue Tesla.jpg" alt="Car 5">
-            <h3>Car 5</h3>
+            <img src="Images/Roadstar.png" alt="Car 5">
+            <h3>Tesla Roadster</h3>
+            <span class="price">$150,000</span>
         </div>
         <div class="product">
-            <img src="Images/Blue Tesla.jpg" alt="Car 6">
-            <h3>Car 6</h3>
+            <img src="Images/Cybertruck.png" alt="Car 6">
+            <h3>Tesla Cybertruck</h3>
+            <span class="price">$40,000</span>
         </div>
     </div>
 </div>
@@ -67,17 +101,12 @@
 <footer>
     <div class="footer-links">
         <a href="#">Contact</a>
-        <a href="#">News</a>
+        <a href="PHP/news.php">News</a>
         <a href="#">Updates</a>
     </div>
 </footer>
 
-<script>
-    function toggleSidebar() {
-        var sidebar = document.querySelector('.sidebar');
-        sidebar.style.display = (sidebar.style.display === 'none' || sidebar.style.display === '') ? 'block' : 'none';
-    }
-</script>
+<script src="JS/product.js"></script>
 
 </body>
 </html>
