@@ -159,3 +159,18 @@ footer {
 .copyright {
   font-size: 12px;
 }
+
+.cookie-consent {
+  text-align: center;
+}
+.cookie-consent p {
+  margin-bottom: 20px;
+}
+.cookie-consent button {
+  margin: 0 10px;
+}
+
+
+
+
+
