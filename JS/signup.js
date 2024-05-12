@@ -3,7 +3,6 @@ function validateForm() {
       var email = document.getElementById("email").value;
       var password = document.getElementById("password").value;
 
-      // Simple validation checks
       if (username.trim() === "") {
         alert("Please enter a username.");
         return false;
@@ -14,7 +13,6 @@ function validateForm() {
         return false;
       }
 
-      // Regular expression for email validation
       var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(email)) {
         alert("Please enter a valid email address.");
@@ -26,5 +24,5 @@ function validateForm() {
         return false;
       }
 
-      return true; // Form is valid
+      return true; 
     }

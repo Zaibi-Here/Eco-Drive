@@ -1,5 +1,5 @@
 <?php
-// Establish database connection
+
 $host = 'localhost';
 $dbname = 'id22107921_contact_us';
 $username = 'id22107921_zaibi92';
@@ -12,7 +12,6 @@ try {
     die("Error: " . $e->getMessage());
 }
 
-// Fetch articles from database
 try {
     $stmt = $pdo->prepare("SELECT title, description FROM articles LIMIT 8");
     $stmt->execute();
@@ -118,7 +117,6 @@ footer {
   margin: 0 10px;
 }
 
-/* Media queries for responsive design */
 @media only screen and (max-width: 768px) {
   header {
     flex-direction: column;
